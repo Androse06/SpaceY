@@ -106,7 +106,7 @@
             <mxPoint x="229.75" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="veuN9IBuky-k6vEiptsz-23" value="&lt;ol&gt;&lt;li&gt;Monter raketten på launchpad.&lt;/li&gt;&lt;li&gt;sett opp basestasjon og verifiser kommunikasjon med rakett.&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;spacingLeft=-26;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="veuN9IBuky-k6vEiptsz-23" value="&lt;ol&gt;&lt;li&gt;Monter raketten på launchpad.&lt;/li&gt;&lt;li&gt;sett opp basestasjon og verifiser kommunikasjon med rakett.&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;spacingLeft=-26;align=left;spacingRight=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="170" y="70" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="veuN9IBuky-k6vEiptsz-24" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
@@ -117,6 +117,9 @@
         </mxCell>
         <mxCell id="veuN9IBuky-k6vEiptsz-25" value="&lt;ol&gt;&lt;li&gt;Aktiver manuell bryter for antennerene og trekk de ut av motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Sikkre antennerene så de peker bort fra motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Koble fra batteriet&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;align=left;spacingLeft=-23;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="330" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e7RL3EwPiBFttQ93fiS8-0" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;Tiltak:&lt;/b&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Raketten bør ha en fysisk bryter som kan brukes til å deaktivere muligheten for antenning.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Raketten/basestasjonen burde kunne gi visuell indikasjon på status (on/off, armed, etc).&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="40" width="400" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
