@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1841" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;b&gt;ARM raketten&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="170" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="JA" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+          <mxGeometry x="-0.9989" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="230" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-5" value="NEI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="330" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Raketten indikerer armed?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=8;align=center;strokeWidth=1;spacing=6;spacingTop=0;spacingLeft=3;spacingRight=3;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="180" y="290" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-0" value="&lt;b&gt;Launch raketten&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-3" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="veuN9IBuky-k6vEiptsz-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="450" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-4" value="NEI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="veuN9IBuky-k6vEiptsz-5" target="veuN9IBuky-k6vEiptsz-6">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-5" value="Raketten launcher?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=8;align=center;strokeWidth=1;spacing=6;spacingTop=0;spacingLeft=3;spacingRight=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="500" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-6" value="&lt;ol&gt;&lt;li&gt;Aktiver manuell bryter for antennerene og trekk de ut av motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Sikkre antennerene så de peker bort fra motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Koble fra batteriet&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;align=left;spacingLeft=-23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-7" value="JA" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-0.9989" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="230" y="580" as="sourcePoint" />
+            <mxPoint x="230" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-8" value="&lt;b&gt;Raketten når apogee og begynner decent&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="830" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-9" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="veuN9IBuky-k6vEiptsz-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="870" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-10" value="NEI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="veuN9IBuky-k6vEiptsz-11" target="veuN9IBuky-k6vEiptsz-12">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-11" value="Parachute utløses?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=8;align=center;strokeWidth=1;spacing=6;spacingTop=0;spacingLeft=3;spacingRight=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="920" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-12" value="Aktiver manuell parachute fra basestasjon." style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="940" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-13" value="JA" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-0.9989" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="230" y="1000" as="sourcePoint" />
+            <mxPoint x="230" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-14" value="&lt;b&gt;La raketten dale til den når bakken. Så koble fra batteriet.&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="1040" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-17" value="&lt;b&gt;Raketten er i ascent&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-18" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="veuN9IBuky-k6vEiptsz-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="660" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-19" value="NEI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="veuN9IBuky-k6vEiptsz-20" target="veuN9IBuky-k6vEiptsz-21">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-20" value="Raketten flyr fint?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=8;align=center;strokeWidth=1;spacing=6;spacingTop=0;spacingLeft=3;spacingRight=3;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="710" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-21" value="Aktiver manuell parachute fra basestasjon." style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="730" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-22" value="JA" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-0.9989" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="229.75" y="790" as="sourcePoint" />
+            <mxPoint x="229.75" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-23" value="&lt;ol&gt;&lt;li&gt;Monter raketten på launchpad.&lt;/li&gt;&lt;li&gt;sett opp basestasjon og verifiser kommunikasjon med rakett.&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;spacingLeft=-26;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="70" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-24" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="229.8" y="150" as="sourcePoint" />
+            <mxPoint x="229.8" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veuN9IBuky-k6vEiptsz-25" value="&lt;ol&gt;&lt;li&gt;Aktiver manuell bryter for antennerene og trekk de ut av motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Sikkre antennerene så de peker bort fra motorene.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Koble fra batteriet&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;glass=0;strokeWidth=1;shadow=0;align=left;spacingLeft=-23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
