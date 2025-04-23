@@ -18,6 +18,7 @@ void readSensors();
 void calibrateSensors();
 void flightPhases();
 void testPhases();
+void simPhases();
 void reciever(unsigned long interval);
 
 enum FlightPhase {
@@ -37,7 +38,7 @@ enum ProgramMode {
 
 
 FlightPhase flightPhase = PREEFLIGHT;
-ProgramMode programMode = LAB;
+ProgramMode programMode = SIM;
 
 // coms bool
 int armedSound = 200;
@@ -64,6 +65,8 @@ unsigned long logTimePrev = 0;
 // SIMULATOR //
 float simRead[12];
 
+unsigned long initTime = 0;
+
 
 //////////
 // INIT //
@@ -86,7 +89,11 @@ void setup() {
   }
 
   // init prev values
+  armIgnition();
+  systemFlag.armed = true;
+  systemFlag.armSignaled = true;
   timePrev = micros();
+  initTime = millis();
 }
 
 
@@ -102,19 +109,26 @@ void loop() {
 
   readSensors();
 
+  if ((millis() - initTime) >= 25000 && !systemFlag.launchSignaled) {
+    systemFlag.launchSignaled = true;
+    deployParachute(true);
+  }
+ 
   if (true) {
     if (programMode == LAB) {
       testPhases();
+    } else if (programMode == SIM) {
+      simPhases();
     } else {
       flightPhases();
     }
   }
 
-  if (flightPhase == LAUNCHED && (millis() - timeIgnite) >= 1000) {
+  if (flightPhase == LAUNCHED && (millis() - timeIgnite) >= 1000 && false) {
     resetIgnition();
   }
 
-  if (systemFlag.armed) {
+  if (systemFlag.launchSignaled) {
     buzzer(armedSound);
     if (armedSound < 500) {
       armedSound += 1;
@@ -162,6 +176,7 @@ void calibrateSensors() {
 void readSensors() {
   // updates the measurement variables to the latest imu reading from sensor.ccp
   altitudePrev = sensorData.altitude;
+
   
   if (programMode == SIM) {
     // fetches the latest sim data
@@ -275,6 +290,62 @@ void testPhases() {
     ctrl(0.5, 0.0, 0.0, 1.0, 0.0);
     updateServos();
 
+  }
+}
+
+
+void simPhases() {
+
+  if (flightPhase == LAUNCHED || flightPhase == FLIGHT) {
+    // rocket is ascending
+    ctrl(0.5, 0.35, 0.0, 0.3, 0.0);
+    updateServos();
+  }
+
+  if (flightPhase == PREEFLIGHT) {
+    // rocket has not yet launched
+    ctrl(0.5, 0.0, 0.0, 0.0, 0.0);
+    updateServos();  
+    
+    if (systemFlag.launchSignaled) {
+      ignite();
+      timeIgnite = millis();
+      flightPhase = LAUNCHED;
+    }
+
+  } else if (flightPhase == LAUNCHED && sensorData.altitude >= 10.0) {
+    // rocket is in stable flight
+    flightPhase = FLIGHT;
+  
+  } else if (flightPhase == FLIGHT && sensorData.altitude >= sensorData.altitudeMax) {
+    // rocket is ascending
+    sensorData.altitudeMax = sensorData.altitude;
+
+  } else if (flightPhase == FLIGHT && (sensorData.altitude + 0.5) < sensorData.altitudeMax) {
+    // rocket has reached its apogee and starts freefall
+    flightPhase = APOGEE;
+
+  } else if (flightPhase == APOGEE && (sensorData.altitudeMax - sensorData.altitude) > 0.3) {
+    // rocket has fallen a certain distance from apogee and deploys parachute
+    deployParachute(true);
+    flightPhase = DESCENT;
+
+  } else if (flightPhase == DESCENT) {
+    // rocket is decending with parachute
+    double altitudeDerivative = (sensorData.altitude - altitudePrev)/ctrlData.dt; // should use imu data
+    if (abs(altitudeDerivative) < 0.001) {
+      flightPhase = GROUND;
+    }
+    deployParachute(true);
+
+  } else if (flightPhase == GROUND && logging) {
+    // rocket has landed; start shutdown
+    logData();
+    logging = false;
+  }
+
+  if (false) {
+    Serial.print(F("flightPhase: ")); Serial.println(flightPhase);
   }
 }
 

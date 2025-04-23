@@ -106,7 +106,7 @@ void publishSimulator(float simPub[4], float simRead[12]){
     char pubmsg[100];
     snprintf(pubmsg, sizeof(pubmsg),
         "FULL,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%.2f",
-        RadServo0, RadServo1, simPub[3], simPub[4], simRead[0], simRead[1], simRead[2],simRead[5]);
+        RadServo0, RadServo1, simPub[2], simPub[3], simRead[0], simRead[1], simRead[2],simRead[5]);
 
 
     Serial.println(pubmsg);

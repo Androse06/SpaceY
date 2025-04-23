@@ -15,6 +15,7 @@ int pitchPin = 2;
 int rollPin = 3;
 
 void initActuator(){
+
     pinMode(pitchPin, OUTPUT);
     pinMode(rollPin, OUTPUT);
     pinMode(parachutePin, OUTPUT);
@@ -35,8 +36,8 @@ void initActuator(){
 
 // Funksjon for fallskjermsystem
 void deployParachute(bool release){
-if (false) {
-  simPub[3] = 1;
+if (simParams.simulatorMode) {
+  simPub[2] = 1;
   publishSimulator(simPub, simRead);
   } else {
     double parachuteLockAngle = 90; // deg
@@ -60,13 +61,17 @@ if (false) {
 
 // Funksjon for å arme ignition
 void armIgnition(){
+  if (simParams.simulatorMode){
+    return;
+  } else{
     digitalWrite(28, HIGH);
+  }
 }
 
 // Funksjon for å antenne rakett motorer
 void ignite(){ 
-if (false) {
-  simPub[4] = 1;
+if (simParams.simulatorMode) {
+  simPub[3] = 1;
   publishSimulator(simPub, simRead);
   } else {
     digitalWrite(24, HIGH);
@@ -78,8 +83,8 @@ if (false) {
 
 // Funksjon for å resete ignition system
 void resetIgnition(){
-if (false) {
-    simPub[4] = 0;
+if (simParams.simulatorMode) {
+    simPub[3] = 0;
     publishSimulator(simPub, simRead);
   } else {
     digitalWrite(28, LOW);
@@ -99,7 +104,7 @@ void buzzer(int freq){
 
 
 void updateServos() {
-    if (false) {
+    if (simParams.simulatorMode) {
       simPub[0] = ctrlData.gimbalPitchAngle;
       simPub[1] = ctrlData.gimbalRollAngle;
       publishSimulator(simPub, simRead);

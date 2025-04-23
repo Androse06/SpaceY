@@ -43,8 +43,15 @@ struct CtrlData
     double rollError = 0.0;
 };
 
+struct SimParams 
+{
+    bool const simulatorMode = true;
+
+};
+
 extern SensorData sensorData;
 extern Flags systemFlag;
 extern CtrlData ctrlData;
+extern SimParams simParams;
 
 #endif // FLIGHT_DATA_H
